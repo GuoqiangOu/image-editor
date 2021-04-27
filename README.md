@@ -54,7 +54,7 @@ For image processing features implemented with IMB Watson Vision Model Apis,
 -  image colorizer, image super resolution, image neural style transfer (Optional)
 
 ### The technologies will be used:
-1. Frontend Framework: **AngularJS**
+1. Frontend Framework: **Angular**
 2. Backend Runtime Environment: **Node.js**
 3. Backend Framework: **Express.js**
 4. 2D image editing libarary: **snap.svg**

@@ -1,0 +1,189 @@
+
+
+/* login background */
+/* http://www.script-tutorials.com/terms-of-use/ */
+/* ============================================================================================== 
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html 
+is available at http://www.script-tutorials.com/night-sky-with-twinkling-stars/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+================================================================================================= */
+
+/* home_wrapper centering style modified base on 
+https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ */
+.home_wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 800px;
+  border:4px solid #e1eef0;
+  border-radius:20px;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  -webkit-box-shadow:0px 0px 18px 0px #e1eef0;
+  -moz-box-shadow:0px 0px 18px 0px #e1eef0;
+  box-shadow:0px 0px 18px 0px #e1eef0;
+  background-color: rgba(0,0,0,.5);
+}
+
+.home_wrapper .editor_btns{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+  width: 300px;
+  margin-left: 25%;
+}
+
+.home_wrapper .home_logout{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.home_wrapper .logout_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.credit {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home_wrapper h2{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.zIndex1 {
+    z-index: 99 !important;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  whitecolor{
+    color:white;
+  }
+
+  header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:-1;
+  }
+  h2{
+    margin-top: 30px;
+    text-align: center;
+  }
+  header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+  }
+  header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+  }
+  
+  @keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  @-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  @-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  @-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  
+  @keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+  }
+  @-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+  }
+  @-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+  }
+  @-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+  }
+  
+  .stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  }
+  
+  .stars {
+  background:#000 url('../../assets/img/background/stars.png') repeat top center;
+  z-index:0;
+  }
+  
+  .twinkling{
+  background:transparent url('../../assets/img/background/twinkling.png') repeat top center;
+  z-index:0;
+  
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+  }
+  
+  .clouds{
+    background:transparent url('../../assets/img/background/clouds.png') repeat top center;
+    z-index:0;
+  
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+  }
+
+
+.message{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message_image{
+  width:800px;
+  height:500px;
+  align-self: center;
+}

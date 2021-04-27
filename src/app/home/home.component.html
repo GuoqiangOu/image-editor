@@ -1,0 +1,46 @@
+﻿
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+
+<!-- <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <div>
+              <button mat-button [matMenuTriggerFor]="signOutMenu">Menu</button>
+              <mat-menu #signOutMenu="matMenu">
+                  <button mat-menu-item (click)="onSignOut()">SignOut</button>
+                  <button mat-menu-item (click)="onGoBack()">Back</button>
+                </mat-menu>
+          </div>
+
+        </mat-toolbar-row>
+      </mat-toolbar>
+
+
+<nav class="zIndex1 navbar navbar-expand navbar-dark bg-dark"  *ngIf="currentUser">
+    <div class="zIndex1 navbar-nav">
+        <a class="nav-item nav-link">Hi {{currentUser.firstName}}!</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav> -->
+
+
+<div class="home_wrapper">
+    <div class="greeting">
+        <h2>Welcome {{currentUser.firstName}}!</h2>
+        <h2>Choose an editor to edit you image. </h2>
+    </div>
+    
+    <div class="editor_btns">
+        <div class="zIndex1"><button class="btn btn-primary" (click) = "on2DModel()">2D Editor</button></div>
+        <div class="zIndex1"><button class="btn btn-primary" (click) = "on3DModel()">3D Editor</button></div>
+    </div>
+
+    <div class="home_logout">
+        <h2>Or</h2>
+        <div class="zIndex1 logout_btn"><button class="btn btn-primary" (click) = "logout()">Logout</button></div>
+    </div>
+
+    <div class="credit zIndex1"><a routerLink="/credit" class="zIndex1 btn btn-link">Credit</a></div>
+</div>
+
